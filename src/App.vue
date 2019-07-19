@@ -1,28 +1,23 @@
 <template>
   <div id="app">
-    
-    <div>
-      <HelloWorld></HelloWorld>
-      <button @click="value+=1"> + </button>
-      <span>{{value}}</span>
-      <button @click="value-=1"> - </button>
-    </div>
+    <counter-group></counter-group>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import CounterGroup from './components/CounterGroup.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
-  },
-  data(){
-    return {
-      value: 0
-    }
-  },
+    CounterGroup
+  }
+  // data(){
+  //   return {
+  //     value: 0
+  //   }
+  // }
 }
 </script>
 
