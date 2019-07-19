@@ -1,6 +1,5 @@
 <template>
     <div>
-        <input type="text" v-model.number="counterNum">
         <div v-for="item in counterNum" v-bind:key="item.id">
             <counter></counter>
         </div>
@@ -14,10 +13,11 @@ export default {
     components: {
         Counter
     },
+    props: ['counterNum'],
     data() {
         return {
             value: 0,
-            counterNum: 0
+            // num: this.counterNum
         }
     }
 }
