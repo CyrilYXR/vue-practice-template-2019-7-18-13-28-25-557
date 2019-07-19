@@ -1,7 +1,12 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    
+    <div>
+      <HelloWorld></HelloWorld>
+      <button @click="value+=1"> + </button>
+      <span>{{value}}</span>
+      <button @click="value-=1"> - </button>
+    </div>
   </div>
 </template>
 
@@ -12,7 +17,12 @@ export default {
   name: 'app',
   components: {
     HelloWorld
-  }
+  },
+  data(){
+    return {
+      value: 0
+    }
+  },
 }
 </script>
 
