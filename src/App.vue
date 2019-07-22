@@ -1,23 +1,24 @@
 <template>
   <div id="app">
-    <input type="text" v-model.number="counterNum">
-    <counter-group :counterNum="counterNum"></counter-group>
+    <counter></counter>
   </div>
 </template>
 
 <script>
-import CounterGroup from './components/CounterGroup.vue'
+
+import Counter from './components/Counter.vue'
 
 export default {
   name: 'app',
   components: {
-    CounterGroup
+    
+    Counter
   },
   data(){
     return {
-      counterNum: 0
+      
     }
-  }
+  },
 }
 </script>
 
